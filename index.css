@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(139, 0, 0, 0.4);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-family: "Spirax", sans-serif;
+  font-size: 2rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+}
+.pageOne, .pageTwo, .pageThree {
+  background-color: rgba(139, 0, 0, 0.5);
+  width: 100%;
+  height: 115%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pageOne {
+  background-image: url("assets/hot.jpg");
+  background-size:  125% 100%;
+}
+
+.pageTwo {
+  background-image: url("assets/juicy.jpg");
+  background-size:  110% 100%;
+}
+
+.pageThree {
+  background-image: url("assets/cosy.jpg");
+  background-size:  108% 100%;
+}
+
+h1 {
+  font-family: "Spirax", sans-serif;
+  font-size: 15vh;
+  color: darkred;
+}
+
+.box {
+  text-wrap: balance;
+  width: 50%;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+section > h2 {
+  background-color: rgb(139, 0, 0, 0.7);
+  text-align: center;
+}
+
+.menu {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(1, 1, 1, 0.7);
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+}
