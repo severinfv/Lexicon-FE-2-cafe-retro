@@ -7,15 +7,15 @@ header {
   top: 0;
   height: 10vh;
   width: 100%;
-  background-color: rgba(139, 0, 0, 0.4);
+  background-color: rgba(84, 52, 82, 0.6);
 }
 
 nav {
+  font-family: "Spirax", sans-serif;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   gap: 3rem;
-  font-family: "Spirax", sans-serif;
-  font-size: 2rem;
 }
 
 a:link,
@@ -30,9 +30,11 @@ a:active {
 main {
   width: 100vw;
   height: 100vh;
-
 }
-.pageOne, .pageTwo, .pageThree {
+
+.pageOne,
+.pageTwo,
+.pageThree {
   background-color: rgba(139, 0, 0, 0.5);
   width: 100%;
   height: 115%;
@@ -40,7 +42,6 @@ main {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -48,48 +49,96 @@ main {
 
 .pageOne {
   background-image: url("assets/hot.jpg");
-  background-size:  125% 100%;
+  background-size: 125% 100%;
 }
 
 .pageTwo {
   background-image: url("assets/juicy.jpg");
-  background-size:  110% 100%;
+  background-size: 110% 100%;
 }
 
 .pageThree {
   background-image: url("assets/cosy.jpg");
-  background-size:  108% 100%;
+  background-size: 108% 100%;
 }
 
 h1 {
   font-family: "Spirax", sans-serif;
-  font-size: 15vh;
+  font-size: 6rem;
   color: darkred;
-}
-
-.box {
-  text-wrap: balance;
-  width: 50%;
-  padding: 10px 20px;
 }
 
 h2 {
   font-family: "Poiret One", sans-serif;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.box {
+  width: 50%;
+  /*width: 700px*/
+  padding: 20px 40px;
 }
 
 section > h2 {
-  background-color: rgb(139, 0, 0, 0.7);
+  background-color: rgb(139, 0, 0, 0.6);
   text-align: center;
 }
 
-.menu {
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgb(1, 1, 1, 0.7);
+h2.box {
+  align-self: flex-start;
+  margin-left: 15%;
 }
 
-.menuItem {
+h2.hide {
+  align-self: flex-end;
+  margin-right: 15%;
+}
+
+.info {
+  background-color: rgb(1, 1, 1, 0.8);
+}
+
+.infoItem {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    justify-content: space-center;
+    font-size: 2rem;
+    gap: 1rem;
+  }
+
+  .pageOne,
+  .pageTwo,
+  .pageThree {
+    background-position: center;
+
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    width: 65%;
+    padding: 10px 15px;
+  }
+
+  h2.box {
+    align-self: center;
+    margin-left: 0px;
+  }
+
+  .hide {
+    display: none;
+  }
+
 }
