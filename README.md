@@ -8,14 +8,14 @@ You are contacted by the advertising agency **SkissaMera**, who has produced a s
 
 ## Sketch
 
-The sketch is provided as a video titled **"Caffe Retro sketch"**, showcasing a website divided into three main sections: **Hot**, **Juice**, and **Cozy**. Watch the video carefully — pause and review details as you build the site.
+The sketch is provided as a video titled **"Caffe Retro sketch"**, showcasing a website divided into three main sections: **Hot**, **Juicy**, and **Cozy**. Watch the video carefully — pause and review details as you build the site.
 
 You are expected to **imitate the sketch as closely as possible**.
 Do **not** use your own images or fonts. Use only the assets provided in the `assets` folder. The built-in CSS color `darkred` is a suitable main color for this exercise.
 
 ## Instructions
 
-- The website must have **three sections**: Hot, Juice, and Cozy.
+- The website must have **three sections**: Hot, Juicy, and Cozy.
 - Each section should **fill the entire viewport height**.
 - Each section should have a **header**, **text content**, and a **background image**, exactly as shown in the sketch.
 - The website must contain a **fixed top navigation menu** with links to the three sections.

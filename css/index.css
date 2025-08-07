@@ -1,3 +1,9 @@
+:root{
+    --font-size-nav: 2.5rem;
+    --font-size-h1: 6rem;
+    --font-size-h2: 1.5rem;
+}
+
 * {
   margin: 0;
 }
@@ -8,13 +14,15 @@ header {
   height: 10vh;
   width: 100%;
   background-color: rgba(84, 52, 82, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
   font-family: "Spirax", sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--font-size-nav);
   display: flex;
-  justify-content: center;
   gap: 3rem;
 }
 
@@ -37,7 +45,7 @@ main {
 .pageThree {
   background-color: rgba(139, 0, 0, 0.5);
   width: 100%;
-  height: 115%;
+  height: 110%;
   background-position: top center;
   background-repeat: no-repeat;
   display: flex;
@@ -48,36 +56,36 @@ main {
 }
 
 .pageOne {
-  background-image: url("assets/hot.jpg");
+  background-image: url("../images/hot.jpg");
   background-size: 125% 100%;
 }
 
 .pageTwo {
-  background-image: url("assets/juicy.jpg");
+  background-image: url("../images/juicy.jpg");
   background-size: 110% 100%;
 }
 
 .pageThree {
-  background-image: url("assets/cosy.jpg");
+  background-image: url("../images/cosy.jpg");
   background-size: 108% 100%;
 }
 
 h1 {
   font-family: "Spirax", sans-serif;
-  font-size: 6rem;
+  font-size: var(--font-size-h1);
   color: darkred;
 }
 
 h2 {
   font-family: "Poiret One", sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--font-size-h2);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .box {
-  width: 50%;
+  width: 55%;
   /*width: 700px*/
-  padding: 20px 40px;
+  padding: 10px 20px;
 }
 
 section > h2 {
@@ -86,13 +94,12 @@ section > h2 {
 }
 
 h2.box {
-  align-self: flex-start;
-  margin-left: 15%;
+position: relative;
+right: 8%
 }
 
 h2.hide {
-  align-self: flex-end;
-  margin-right: 15%;
+left: 8%
 }
 
 .info {
@@ -104,41 +111,4 @@ h2.hide {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
-  nav {
-    justify-content: space-center;
-    font-size: 2rem;
-    gap: 1rem;
-  }
 
-  .pageOne,
-  .pageTwo,
-  .pageThree {
-    background-position: center;
-
-    background-size: cover;
-  }
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .box {
-    width: 65%;
-    padding: 10px 15px;
-  }
-
-  h2.box {
-    align-self: center;
-    margin-left: 0px;
-  }
-
-  .hide {
-    display: none;
-  }
-
-}
