@@ -1,7 +1,9 @@
 :root{
-    --font-size-nav: 2.5rem;
-    --font-size-h1: 6rem;
-    --font-size-h2: 1.5rem;
+    --font-size-nav: 5vh;
+    --font-size-h1: 15vh;
+    --font-size-h2: 3vh;
+    --box-width: 56%;
+    --shift-box-position: 8%;
 }
 
 * {
@@ -13,7 +15,7 @@ header {
   top: 0;
   height: 10vh;
   width: 100%;
-  background-color: rgba(84, 52, 82, 0.6);
+  background-color: rgba(59, 37, 59, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +25,7 @@ nav {
   font-family: "Spirax", sans-serif;
   font-size: var(--font-size-nav);
   display: flex;
-  gap: 3rem;
+  gap: 10vw;
 }
 
 a:link,
@@ -43,7 +45,6 @@ main {
 .pageOne,
 .pageTwo,
 .pageThree {
-  background-color: rgba(139, 0, 0, 0.5);
   width: 100%;
   height: 110%;
   background-position: top center;
@@ -52,12 +53,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 2.5rem;
 }
 
 .pageOne {
   background-image: url("../images/hot.jpg");
-  background-size: 125% 100%;
+  background-size: 125% 110%;
 }
 
 .pageTwo {
@@ -83,27 +84,27 @@ h2 {
 }
 
 .box {
-  width: 55%;
-  /*width: 700px*/
-  padding: 10px 20px;
+  width: var(--box-width);
+  padding: 2vh;
 }
 
 section > h2 {
-  background-color: rgb(139, 0, 0, 0.6);
+  background-color: rgb(139, 0, 0, 0.8);
   text-align: center;
 }
 
 h2.box {
 position: relative;
-right: 8%
+right: var(--shift-box-position);
 }
 
 h2.hide {
-left: 8%
+left: var(--shift-box-position);
 }
 
 .info {
-  background-color: rgb(1, 1, 1, 0.8);
+  background-color: rgb(1, 1, 1, 0.7);
+  padding: 2vh 4vh;
 }
 
 .infoItem {

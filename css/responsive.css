@@ -2,7 +2,7 @@
 
     :root{
     --font-size-nav: 1.5rem;
-    --font-size-h1: 4.5rem;
+    --font-size-h1: 3rem;
     --font-size-h2: 1rem;
 }
   .pageOne,
@@ -11,12 +11,11 @@
     background-position: top center;
     background-size: cover;
     height: 100%;
-    gap: 15px;
+    gap: 7vw;
   }
 
   .box {
     width: 75%;
-    padding: 5px 5px;
   }
   
   h2.box {
@@ -26,5 +25,9 @@
   .hide {
     display: none;
   }
+
+  .info {
+  padding: 2vh;
+}
 }
 
