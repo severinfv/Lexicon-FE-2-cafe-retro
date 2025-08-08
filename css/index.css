@@ -1,13 +1,17 @@
 :root{
-    --font-size-nav: 5vh;
-    --font-size-h1: 15vh;
-    --font-size-h2: 3vh;
-    --box-width: 56%;
+    --font-size-nav: 2rem;
+    --font-size-h2: 6rem;
+    --font-size-p: 1.2rem;
+    --box-width:56%;
     --shift-box-position: 8%;
 }
 
 * {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -22,38 +26,34 @@ header {
 }
 
 nav {
-  font-family: "Spirax", sans-serif;
-  font-size: var(--font-size-nav);
   display: flex;
-  gap: 10vw;
+  gap: 4rem;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
+  font-family: "Spirax", sans-serif;
+  font-size: var(--font-size-nav);
   color: white;
   text-decoration: none;
-  cursor: pointer;
-}
-
-main {
-  width: 100vw;
-  height: 100vh;
+  /*cursor: pointer;*/
 }
 
 .pageOne,
 .pageTwo,
 .pageThree {
-  width: 100%;
-  height: 110%;
+  height: 100vh;
+  border-bottom: 1rem solid darkred;
+  box-sizing: content-box;
   background-position: top center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .pageOne {
@@ -71,40 +71,43 @@ main {
   background-size: 108% 100%;
 }
 
-h1 {
-  font-family: "Spirax", sans-serif;
-  font-size: var(--font-size-h1);
-  color: darkred;
+section:last-child {
+border-bottom: none;
 }
 
 h2 {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Spirax", sans-serif;
   font-size: var(--font-size-h2);
+  color: darkred;
+}
+
+p {
+  font-family: "Poiret One", sans-serif;
+  font-size: var(--font-size-p);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .box {
   width: var(--box-width);
-  padding: 2vh;
+  padding: 1rem;
 }
 
-section > h2 {
+section > p {
   background-color: rgb(139, 0, 0, 0.8);
   text-align: center;
 }
 
-h2.box {
+p.box {
 position: relative;
 right: var(--shift-box-position);
 }
 
-h2.hide {
+p.hide {
 left: var(--shift-box-position);
 }
 
 .info {
   background-color: rgb(1, 1, 1, 0.7);
-  padding: 2vh 4vh;
 }
 
 .infoItem {

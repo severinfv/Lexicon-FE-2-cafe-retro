@@ -2,23 +2,23 @@
 
     :root{
     --font-size-nav: 1.5rem;
-    --font-size-h1: 3rem;
-    --font-size-h2: 1rem;
+    --font-size-h2: 3rem;
+    --font-size-p: 1rem;
 }
   .pageOne,
   .pageTwo,
   .pageThree {
     background-position: top center;
     background-size: cover;
-    height: 100%;
-    gap: 7vw;
+    border-bottom: none;
+
   }
 
   .box {
     width: 75%;
   }
   
-  h2.box {
+  p.box {
     position: static;
   }
 
